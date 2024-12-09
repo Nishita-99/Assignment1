@@ -105,49 +105,87 @@ body {
 
 .main-content {
   padding-top: 40px;
+  display: flex;
+}
+
+.side-bar {
+  width: 29%;
+  margin-right: 40px;
 }
 
 .button-group {
   padding: 12px;
   border: 2px solid var(--gainsboro);
   border-radius: 12px;
-  width: 29%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.sell button {
+.sell p {
   background-color: var(--darkblack);
-  border: none;
+  color: var(--white);
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 16px;
   width: 50%;
-  padding: 0px 75px;
+  padding: 10px 75px;
+  /* justify-content: center; */
 }
 
-.rent span {
+.rent p {
   background-color: var(--white);
   border: none;
-  border-radius: 12px;
-  font-size: 14px;
+  /* border-radius: 12px; */
+  font-size: 16px;
   width: 50%;
 }
 
 .catagory p {
   font-size: 20px;
   color: var(--darkblack);
-  padding-top: 24px;
+  padding: 24px 0 16px;
 }
 
-.catagory li {
+.catagory label {
   list-style: none;
   padding-bottom: 12px;
   cursor: pointer;
 }
-.properties img {
-  width: 425px;
+
+.catagory input {
+  padding-bottom: 12px;
+}
+
+.location p {
+  font-size: 20px;
+  color: var(--darkblack);
+  padding: 24px 0 16px;
+}
+
+.location label {
+  list-style: none;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.location input {
+  padding-bottom: 12px;
+}
+/* side bar section ends */
+
+/* property part starts  */
+/* .asri {
+  width: 32.1%;
+} */
+
+.Property-card img {
+  /* width: 425px; */
+  width: 100%;
+  /* 100% dba    */
   padding-bottom: 16px;
 }
 
-.PLS .image-des {
+.main-content .image-des {
   padding-bottom: 56px;
 }
 
@@ -157,11 +195,13 @@ body {
   justify-content: space-between;
   column-gap: 24px;
   row-gap: 24px;
+  width: 100%;
 }
 
-.Property-card .Property h6 {
-  font-size: var(--h7-b);
+.location h6 {
+  font-size: 24px;
   color: var(--darkblack);
+  padding-bottom: 5px;
 }
 
 .address {
@@ -169,12 +209,12 @@ body {
 }
 
 .location i {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   color: var(--darkblack);
 }
 
-.location p {
+.location span {
   font-size: 14px;
   color: var(--dimgray500);
 }
@@ -218,11 +258,104 @@ body {
   /* border-right: 2px solid #e4e4e7; */
 }
 
-.listing button {
+.Property button {
   padding: 10px 22.5px;
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--darkblack);
   border-radius: 12px;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-top: 40px;
+  border-radius: none;
 }
 /* listing section ends */
+
+/* footer starts  */
+.contact-location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: var(--darkblack);
+  padding: 80px 56px;
+}
+
+.footer h6 {
+  font-size: 32px;
+  padding-bottom: 32px;
+  color: var(--white);
+}
+
+.agency-con {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-left {
+  width: 49%;
+}
+
+.agency-con p {
+  color: var(--dimgray500);
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+
+.agency-con span {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.footer-nav p,
+.footer-social p {
+  color: var(--dimgray500);
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.footer-right {
+  width: 28%;
+  display: flex;
+  gap: 24px;
+}
+
+.left-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 24px;
+}
+
+.nav-bar a {
+  padding-bottom: 16px;
+  color: var(--white);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-social ul {
+  list-style-type: none;
+  color: var(--white);
+  font-size: 16px;
+  /* padding-bottom: 16px; */
+}
+
+.footer-social li {
+  padding-bottom: 16px;
+}
+
+hr {
+  color: var(--dimgray500);
+  width: 88%;
+}
+
+.foot {
+  background-color: var(--darkblack);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 56px 40px;
+}
+
+.foot p {
+  font-size: 14px;
+  color: var(--dimgray500);
+}

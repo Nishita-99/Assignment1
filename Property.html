@@ -25,15 +25,15 @@
     <!-- header section starts -->
     <div class="header">
       <div class="logo">
-        <img src="../Assets/Logo Container.png" alt="" />
+        <img src="./Assets/Logo Container.png" alt="" />
       </div>
       <nav>
         <a href="./index.html">Home</a>
         <a href="./About.html">About Us</a>
-        <a href="./Property.html">Property</a>
-        <a href="#">Agent</a>
-        <a href="#">Blog</a>
-        <a href="#">FAQ's</a>
+        <a href="./Property.html"><b>Property</b></a>
+        <a href="./contact.html">Agent</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./FAQ.html">FAQ's</a>
       </nav>
       <div class="contact-btn">
         <button>Contact Us</button>
@@ -66,26 +66,76 @@
           <div class="main-content">
             <div class="side-bar">
               <div class="button-group">
-                <button class="sell">Sell</button>
-                <span>Rent</span>
+                <div class="sell">
+                  <p>Sell</p>
+                </div>
+                <p class="rent">Rent</p>
               </div>
               <div class="catagory">
-                <p>Catagory</p>
-                <ul>
-                  <li>House</li>
-                  <li>apartment</li>
-                  <li>Villa</li>
-                </ul>
+                <p><b>Catagory</b></p>
+                <form action="#">
+                  <input
+                    type="checkbox"
+                    id="property"
+                    name="property"
+                    value="House"
+                  />
+                  <label for="property"> House</label><br />
+                  <input
+                    type="checkbox"
+                    id="property"
+                    name="property"
+                    value="Apartment"
+                  />
+                  <label for="property"> Apartment</label><br />
+                  <input
+                    type="checkbox"
+                    id="property"
+                    name="property"
+                    value="Villa"
+                  />
+                  <label for="property"> Villa</label><br />
+                </form>
               </div>
               <div class="location">
-                <p>Location</p>
-                <ul>
-                  <li>London</li>
-                  <li>Manchester</li>
-                  <li>Southampton</li>
-                  <li>Chelmsford</li>
-                  <li>Liverpool</li>
-                </ul>
+                <p><b>Location</b></p>
+                <form action="#">
+                  <input
+                    type="checkbox"
+                    id="location"
+                    name="location"
+                    value="London"
+                  />
+                  <label for="location"> London</label><br />
+                  <input
+                    type="checkbox"
+                    id="location"
+                    name="location"
+                    value="Manchester"
+                  />
+                  <label for="location"> Manchester</label><br />
+                  <input
+                    type="checkbox"
+                    id="location"
+                    name="location"
+                    value="Southampton"
+                  />
+                  <label for="location"> Southampton</label><br />
+                  <input
+                    type="checkbox"
+                    id="location"
+                    name="location"
+                    value="Chelmsford"
+                  />
+                  <label for="location"> Chelmsford</label><br />
+                  <input
+                    type="checkbox"
+                    id="location"
+                    name="location"
+                    value="Liverpool"
+                  />
+                  <label for="location"> Liverpool</label><br />
+                </form>
               </div>
               <div class="price">
                 <p>Price Range</p>
@@ -109,13 +159,13 @@
             <div class="Property">
               <div class="Property-card">
                 <div class="asri">
-                  <img src="../Assets/Property Image (11).png" alt="" />
+                  <img src="./Assets/Property Image (11).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Sakoora Hill</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>100 High St, London, W1D 1NR</p>
+                        <span>100 High St, London, W1D 1NR</span>
                       </div>
                     </div>
                     <div class="price">
@@ -136,13 +186,13 @@
                   </div>
                 </div>
                 <div class="riverfront">
-                  <img src="../Assets/Property Image (9).png" alt="" />
+                  <img src="./Assets/Property Image (9).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Riverfront View</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>32 Market St, Manchester M1 1PW</p>
+                        <span>32 Market St, Manchester M1 1PW</span>
                       </div>
                     </div>
                     <div class="price">
@@ -165,13 +215,13 @@
                   </div>
                 </div>
                 <div class="loft">
-                  <img src="../Assets/Property Image (3).png" alt="" />
+                  <img src="./Assets/Property Image (3).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Modern Loft</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>20 St Anns Sq, Manchester M2 7HG</p>
+                        <span>20 St Anns Sq, Manchester M2 7HG</span>
                       </div>
                     </div>
                     <div class="price">
@@ -193,13 +243,13 @@
                   </div>
                 </div>
                 <div class="beachfront">
-                  <img src="../Assets/Property Image (4).png" alt="" />
+                  <img src="./Assets/Property Image (4).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Beachfront Retreat</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>44-46 John Dalton St, Mancheter M2 6LE</p>
+                        <span>44-46 John Dalton St, Mancheter M2 6LE</span>
                       </div>
                     </div>
                     <div class="price">
@@ -222,13 +272,13 @@
                   </div>
                 </div>
                 <div class="cabin">
-                  <img src="../Assets/Property Image (11).png" alt="" />
+                  <img src="./Assets/Property Image (11).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Rustic Cabin</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>14 St Anns Sq, Manchester M27HQ</p>
+                        <span>14 St Anns Sq, Manchester M27HQ</span>
                       </div>
                     </div>
                     <div class="price">
@@ -251,13 +301,13 @@
                   </div>
                 </div>
                 <div class="lakeview">
-                  <img src="../Assets/Property Image (7).png" alt="" />
+                  <img src="./Assets/Property Image (7).png" alt="" />
                   <div class="pro-detail">
                     <div class="location">
                       <h6>Lakeview House</h6>
                       <div class="address">
                         <i class="fa-solid fa-location-dot"></i>
-                        <p>4 Minshull St, Manchester M1 3DZ</p>
+                        <span>4 Minshull St, Manchester M1 3DZ</span>
                       </div>
                     </div>
                     <div class="price">
@@ -291,7 +341,7 @@
     <!-- footer section starts -->
     <div>
       <div class="footer">
-        <div class="contact-loation">
+        <div class="contact-location">
           <div class="footer-left">
             <h6>
               We are an experienced real estate <br />agency based in United
@@ -320,9 +370,9 @@
                   <a href="./index.html">Home</a>
                   <a href="./About.html">About Us</a>
                   <a href="./Property.html">Listing Product</a>
-                  <a href="#">FAQ's</a>
-                  <a href="#">Blog</a>
-                  <a href="#">Agent</a>
+                  <a href="./FAQ.html">FAQ's</a>
+                  <a href="./blog.html">Blog</a>
+                  <a href="./contact.html">Agent</a>
                 </div>
               </div>
             </div>
@@ -341,7 +391,7 @@
       </div>
       <hr />
       <div class="foot">
-        <img src="../Assets/Logo Container-1.png" alt="" />
+        <img src="./Assets/Logo Container-1.png" alt="" />
         <p>&copy;2023-2024, All Rights Reserved</p>
         <a href="#">Back to top <i class="fa-solid fa-arrow-up"></i></a>
       </div>
