@@ -24,6 +24,9 @@
   --h6-b: 32px;
   --h7: 24px;
   --h7-b: 24px;
+  --font-w-bold: 700;
+  --font-w-medium: 500;
+  --font-w-reg: 400;
 }
 
 * {
@@ -53,11 +56,19 @@ body {
   color: var(--darkblack);
 }
 
+nav b {
+  color: var(--darkblack);
+  font-weight: var(--font-w-medium);
+}
+
 .header button {
   padding: 10px 18px;
   border: none;
   border-radius: 12px;
-  font-size: 14px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--font-w-medium);
+  background-color: var(--darkblack);
 }
 /* header section ends */
 
@@ -164,9 +175,6 @@ option {
 }
 .content {
   width: 47.8%;
-  display: grid;
-  grid-template-columns: repeat(2, fr);
-  justify-content: space-between;
   gap: 24px;
 }
 
@@ -187,40 +195,51 @@ option {
   color: var(--dimgray500);
 }
 
-.content .address {
+.address {
   color: var(--darkblack);
   font-size: 20px;
   padding-top: 12px;
 }
 
 .Email-ph {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  padding-bottom: 48px;
+}
+
+.Email,
+.Phone,
+.Head,
+.Office {
+  width: 50%;
 }
 
 .head-off {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
 }
+/* form and content ends */
 
 /* footer section starts  */
 .contact-location {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .footer {
   background-color: var(--darkblack);
-  padding: 80px 56px;
+  padding: 80px 56px 40px;
 }
 
 .footer h6 {
   font-size: 32px;
+  font-weight: var(--font-w-reg);
   padding-bottom: 32px;
   color: var(--white);
 }
 
-.footer .agency-con {
+.agency-con {
   display: flex;
   gap: 24px;
 }
@@ -228,17 +247,20 @@ option {
 .agency-con p {
   color: var(--dimgray500);
   font-size: 14px;
+  font-weight: var(--font-w-medium);
   padding-bottom: 12px;
 }
 
 .agency-con span {
   color: var(--white);
   font-size: 16px;
+  font-weight: var(--font-w-reg);
 }
 
 .footer-nav p,
 .footer-social p {
   color: var(--dimgray500);
+  font-weight: var(--font-w-reg);
   font-size: 16px;
   padding-bottom: 16px;
 }
@@ -246,6 +268,7 @@ option {
 .footer-right {
   display: flex;
   gap: 24px;
+  width: 25%;
 }
 
 .left-nav {
@@ -257,6 +280,7 @@ option {
 .nav-bar a {
   padding-bottom: 16px;
   color: var(--white);
+  font-weight: var(--font-w-reg);
   font-size: 16px;
   text-decoration: none;
 }
@@ -264,6 +288,7 @@ option {
 .footer-social ul {
   list-style-type: none;
   color: var(--white);
+  font-weight: var(--font-w-reg);
   font-size: 16px;
   /* padding-bottom: 16px; */
 }
@@ -274,7 +299,7 @@ option {
 
 hr {
   color: var(--dimgray500);
-  width: 88%;
+  padding: 0 22%;
 }
 
 .foot {
@@ -286,5 +311,13 @@ hr {
 
 .foot p {
   font-size: 14px;
+  font-weight: var(--font-w-medium);
   color: var(--dimgray500);
+  width: 25%;
 }
+
+.foot a {
+  text-decoration: none;
+  color: var(--white);
+}
+/* footer section ends  */
