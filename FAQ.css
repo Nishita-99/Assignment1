@@ -74,7 +74,7 @@ nav b {
 }
 /* header section ends */
 
-/* intro section starts */
+/* main section starts */
 .main {
   margin: 80px;
 }
@@ -95,20 +95,24 @@ nav b {
   align-content: center;
   justify-content: center;
   text-align: center;
+  /* position: relative; */
 }
 
 .search {
   padding-top: 24px;
+  /* position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 .search-bar {
-  width: 68%;
+  width: 100%;
   border: 2px solid var(--gainsboro);
   border-radius: 12px;
   padding: 12px 0px;
-  display: grid;
-  align-content: center;
-  justify-content: center;
+
+  /* justify-content: center; */
   text-align: left;
   /* padding-bottom: 40px; */
 }
@@ -133,6 +137,7 @@ nav b {
   font-size: 14px;
   color: var(--darkgray);
 }
+
 .search-op button {
   border: none;
   border-radius: 4px;
@@ -196,17 +201,22 @@ nav b {
   padding: 16px;
 }
 
-.ans p {
-  padding-left: 16px;
-  /* color: var(--darkblack); */
+.que-bold {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
 }
 
+.que-bold i {
+  padding: ;
+}
 .Q-A i,
 b {
   color: var(--darkblack);
 }
 
 .Q-A {
+  margin: 16px 0 16px 16px;
   background-color: #fafafa;
   border-radius: 12px;
 }
@@ -284,20 +294,22 @@ b {
 .contact-location {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 
 .footer {
   background-color: var(--darkblack);
-  padding: 80px 56px;
+  padding: 80px 56px 40px;
 }
 
 .footer h6 {
   font-size: 32px;
+  font-weight: var(--font-w-reg);
   padding-bottom: 32px;
   color: var(--white);
 }
 
-.footer .agency-con {
+.agency-con {
   display: flex;
   gap: 24px;
 }
@@ -305,24 +317,28 @@ b {
 .agency-con p {
   color: var(--dimgray500);
   font-size: 14px;
+  font-weight: var(--font-w-medium);
   padding-bottom: 12px;
 }
 
 .agency-con span {
   color: var(--white);
   font-size: 16px;
+  font-weight: var(--font-w-reg);
 }
 
 .footer-nav p,
 .footer-social p {
   color: var(--dimgray500);
   font-size: 16px;
+  font-weight: var(--font-w-reg);
   padding-bottom: 16px;
 }
 
 .footer-right {
   display: flex;
   gap: 24px;
+  width: 28%;
 }
 
 .left-nav {
@@ -335,12 +351,14 @@ b {
   padding-bottom: 16px;
   color: var(--white);
   font-size: 16px;
+  font-weight: var(--font-w-reg);
   text-decoration: none;
 }
 
 .footer-social ul {
   list-style-type: none;
   color: var(--white);
+  font-weight: var(--font-w-reg);
   font-size: 16px;
   /* padding-bottom: 16px; */
 }
@@ -351,7 +369,7 @@ b {
 
 hr {
   color: var(--dimgray500);
-  width: 88%;
+  padding: 0 22%;
 }
 
 .foot {
@@ -363,10 +381,133 @@ hr {
 
 .foot p {
   font-size: 14px;
+  font-weight: var(--font-w-medium);
   color: var(--dimgray500);
+  width: 25%;
 }
 
 .foot a {
   text-decoration: none;
   color: var(--white);
+}
+
+/* media queries for tablet starts*/
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 80px 39px 40px;
+  }
+
+  .contact-location {
+    gap: 18.36%;
+  }
+
+  .agency-con {
+    display: inline;
+  }
+
+  .upper-contact {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .phn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+
+  .foot {
+    margin: 40px 17px 0px;
+  }
+
+  .footer-right {
+    width: 31.8%;
+  }
+
+  .footer-nav {
+    width: 71.16%;
+  }
+
+  .left-nav {
+    gap: 24px;
+  }
+}
+/* media queries for tablet ends*/
+
+/* media queries for mobile ends*/
+@media only screen and (max-width: 376.99px) {
+  /* header starts  */
+  .header {
+    width: 100%;
+    padding: 19px 20px;
+    align-items: center;
+  }
+
+  .logo,
+  .ham {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .ham a {
+    font-size: 32px;
+    padding: 9px 5px;
+  }
+  /* header ends  */
+
+  /* for footer  */
+  .contact-location {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .footer-right {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-social {
+    padding-top: 24px;
+  }
+
+  .footer-social ul {
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .foot {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    padding: 16px 0;
+    width: 100%;
+    margin: 16px 17px 0px;
+  }
+
+  .foot img,
+  a {
+    justify-content: center;
+  }
+
+  .foot p {
+    padding: 24px 0;
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
 }

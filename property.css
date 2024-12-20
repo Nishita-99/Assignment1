@@ -165,28 +165,18 @@ nav b {
   padding: 24px 0 16px;
 }
 
-/* .catagory {
-  padding-bottom: 12px;
-  align-content: flex-start;
-} */
-
 .catagory label {
-  /* list-style: none;  */
+  font-size: 20px;
+  font-weight: var(--font-w-reg);
+  color: var(--darkblack);
   cursor: pointer;
   /* white-space: nowrap; */
   /* display: flex; */
 }
 
-input,
-label {
-  /* display: flex; */
-  display: inline-flex;
-  align-items: center;
-}
-
 .location p {
   font-size: 20px;
-  font-weight: var(--font-w-reg);
+  font-weight: var(--font-w-medium);
   color: var(--darkblack);
   padding: 24px 0 16px;
 }
@@ -195,10 +185,34 @@ label {
   list-style: none;
   padding-bottom: 12px;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: var(--font-w-reg);
+  color: var(--darkblack);
 }
 
 .location input {
   padding-bottom: 12px;
+}
+
+.range label {
+  font-size: 20px;
+  font-weight: var(--font-w-medium);
+  color: var(--darkblack);
+  padding: 24px 0 16px;
+}
+
+.range input {
+  width: 80%;
+}
+
+.value label {
+  color: var(--dimgray500);
+}
+
+.value {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 /* side bar section ends */
 
@@ -251,6 +265,7 @@ label {
 
 .location h6 {
   font-size: 24px;
+  font-weight: var(--font-w-medium);
   color: var(--darkblack);
   padding-bottom: 5px;
 }
@@ -259,26 +274,34 @@ label {
   display: flex;
 }
 
+.address p {
+  font-size: 14px;
+  font-weight: var(--font-w-medium);
+  color: var(--dimgray500);
+}
+
 .location i {
   width: 20px;
   height: 20px;
   color: var(--darkblack);
 }
 
-/* .location span {
-  font-size: 14px;
-  color: var(--dimgray500);
-} */
-
-.Property .price i {
-  font-size: 15px;
+.price b,
+i {
+  font-size: 20px;
+  font-weight: var(--font-w-bold);
   color: var(--darkblack);
 }
 
 .price p {
-  font-size: 16px;
-  font-weight: ;
+  padding-top: 4px;
+  font-size: 14px;
+  font-weight: var(--font-w-reg);
   color: var(--dimgray500);
+}
+
+.Property {
+  position: relative;
 }
 
 .Property hr {
@@ -306,6 +329,7 @@ label {
 
 .Property span {
   font-size: 16px;
+  font-weight: var(--font-w-reg);
   color: var(--dimgray500);
   /* border-right: 2px solid #e4e4e7; */
 }
@@ -315,7 +339,10 @@ label {
   color: var(--white);
   background-color: var(--darkblack);
   border-radius: 12px;
-  /* justify-items: center; */
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin-top: 40px;
   border-radius: none;
 }
@@ -367,6 +394,15 @@ label {
   height: auto;
   width: 100%;
   border-radius: 24px;
+}
+
+form span {
+  display: flex;
+}
+
+form label,
+input {
+  display: flex;
 }
 
 form label,
@@ -503,4 +539,126 @@ hr {
 .foot a {
   text-decoration: none;
   color: var(--white);
+}
+
+/* media queries for tablet starts*/
+@media only screen and (max-width: 768px) {
+  /* header starts  */
+  .header {
+    width: 100%;
+    padding: 19px 20px;
+    align-items: center;
+  }
+
+  .logo,
+  .ham {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .ham a {
+    font-size: 32px;
+    padding: 9px 5px;
+  }
+  /* header ends  */
+
+  /* footer starts  */
+  .footer {
+    padding: 80px 39px 40px;
+  }
+
+  .contact-location {
+    gap: 18.36%;
+  }
+
+  .agency-con {
+    display: inline;
+  }
+
+  .upper-contact {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .phn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+
+  .foot {
+    margin: 40px 17px 0px;
+  }
+
+  .footer-right {
+    width: 31.8%;
+  }
+
+  .footer-nav {
+    width: 71.16%;
+  }
+
+  .left-nav {
+    gap: 24px;
+  }
+}
+/* media queries for tablet ends*/
+
+/* media queries for mobile ends*/
+@media only screen and (max-width: 376.99px) {
+  /* for footer  */
+  .contact-location {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .footer-right {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-social {
+    padding-top: 24px;
+  }
+
+  .footer-social ul {
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .foot {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    padding: 16px 0;
+    width: 100%;
+    margin: 16px 17px 0px;
+  }
+
+  .foot img,
+  a {
+    justify-content: center;
+  }
+
+  .foot p {
+    padding: 24px 0;
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
 }

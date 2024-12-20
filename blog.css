@@ -244,28 +244,34 @@ nav b {
   font-size: 24px;
   color: var(--darkblack);
   font-weight: var(--font-w-medium);
-  margin-bottom: 12px;
+  /* padding-bottom: 12px; */
+  /* margin-bottom: 12px; */
 }
 
 .info i {
   padding-left: 16px;
 }
 .info p {
+  padding-top: 12px;
   font-size: 16px;
   color: var(--dimgray500);
   font-weight: var(--font-w-reg);
 }
 
+.main {
+  position: relative;
+}
 .more-btn {
   width: 14%;
   text-align: center;
   padding: 11.5px 18px;
-
   background-color: var(--darkblack);
   border-radius: 12px;
-  display: grid;
-  justify-content: center;
   margin-top: 40px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .more-btn p {
@@ -450,3 +456,124 @@ hr {
   color: var(--white);
 }
 /* footer section ends  */
+
+/* media queries for tablet starts*/
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 80px 39px 40px;
+  }
+
+  .contact-location {
+    gap: 18.36%;
+  }
+
+  .agency-con {
+    display: inline;
+  }
+
+  .upper-contact {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .phn {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+  }
+
+  .foot {
+    margin: 40px 17px 0px;
+  }
+
+  .footer-right {
+    width: 31.8%;
+  }
+
+  .footer-nav {
+    width: 71.16%;
+  }
+
+  .left-nav {
+    gap: 24px;
+  }
+}
+/* media queries for tablet ends*/
+
+/* media queries for mobile ends*/
+@media only screen and (max-width: 376.99px) {
+  /* header starts  */
+  .header {
+    width: 100%;
+    padding: 19px 20px;
+    align-items: center;
+  }
+
+  .logo,
+  .ham {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .ham a {
+    font-size: 32px;
+    padding: 9px 5px;
+  }
+  /* header ends  */
+
+  /* for footer  */
+  .contact-location {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .footer-right {
+    display: block;
+    width: 100%;
+  }
+
+  .footer-social {
+    padding-top: 24px;
+  }
+
+  .footer-social ul {
+    /* display: inline; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .foot {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    padding: 16px 0;
+    width: 100%;
+    margin: 16px 17px 0px;
+  }
+
+  .foot img,
+  a {
+    justify-content: center;
+  }
+
+  .foot p {
+    padding: 24px 0;
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+}
