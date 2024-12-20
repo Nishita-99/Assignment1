@@ -70,7 +70,7 @@ nav b {
   font-weight: var(--font-w-medium);
   background-color: var(--darkblack);
 }
-/* header section starts */
+/* header section ends */
 
 /* listing section starts */
 .listing {
@@ -376,7 +376,7 @@ i {
 }
 
 .help-head h2 {
-  font-size: 64px;
+  font-size: var(--h2-b);
   font-weight: var(--font-w-medium);
   color: var(--white);
   padding-bottom: 24px;
@@ -543,29 +543,52 @@ hr {
 
 /* media queries for tablet starts*/
 @media only screen and (max-width: 768px) {
-  /* header starts  */
   .header {
     width: 100%;
-    padding: 19px 20px;
     align-items: center;
   }
 
-  .logo,
-  .ham {
-    display: flex;
-    justify-content: space-between;
+  .header a {
+    padding: 4px 4px;
+  }
+  /* header section ends */
+  .intro h2 {
+    font-size: var(--h5-b);
+    font-weight: var(--font-w-medium);
+    width: 31.8%;
   }
 
-  nav,
-  .contact-btn {
+  .intro p {
+    font-size: 16px;
+    width: 40.62%;
+  }
+
+  .side-bar {
     display: none;
   }
 
-  .ham a {
-    font-size: 32px;
-    padding: 9px 5px;
+  /* listing section starts */
+
+  /* Contact section starts */
+  .help-head {
+    width: 62%;
   }
-  /* header ends  */
+
+  .help-head h2 {
+    font-size: var(--h4-b);
+    font-weight: var(--font-w-medium);
+    padding-bottom: 24px;
+  }
+
+  .help-head p {
+    font-size: 16px;
+    font-weight: var(--font-w-reg);
+  }
+
+  .form {
+    width: 51%;
+    height: 66%;
+  }
 
   /* footer starts  */
   .footer {
@@ -613,6 +636,30 @@ hr {
 
 /* media queries for mobile ends*/
 @media only screen and (max-width: 376.99px) {
+  /* header starts  */
+  .header {
+    width: 100%;
+    padding: 19px 20px;
+    align-items: center;
+  }
+
+  .logo,
+  .ham {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .ham a {
+    font-size: 32px;
+    padding: 9px 5px;
+  }
+  /* header ends  */
+
   /* for footer  */
   .contact-location {
     display: block;

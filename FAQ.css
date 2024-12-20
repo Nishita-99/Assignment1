@@ -393,6 +393,35 @@ hr {
 
 /* media queries for tablet starts*/
 @media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    align-items: center;
+  }
+
+  .header a {
+    padding: 4px 4px;
+  }
+
+  /* mail section starts */
+  .con-intro {
+    width: 60%;
+  }
+
+  .con-intro h2 {
+    font-size: var(--h6-b);
+    font-weight: var(--font-w-medium);
+  }
+
+  .con-intro p {
+    font-size: 14px;
+  }
+
+  .btn input {
+    width: 303px;
+  }
+  /* contact section ends  */
+
+  /* for footer  */
   .footer {
     padding: 80px 39px 40px;
   }

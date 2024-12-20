@@ -170,6 +170,13 @@ nav b {
   padding: 80px;
 }
 
+.bank-wrapper h5 {
+  font-size: var(--h6-b);
+  font-weight: var(--font-w-reg);
+  margin-bottom: 48px;
+  text-align: center;
+}
+
 .client-heading h3 {
   font-size: var(--h3-b);
   font-weight: var(--font-w-medium);
@@ -227,6 +234,7 @@ nav b {
 
 .client-des {
   padding: 56px 0;
+  width: 50%;
 }
 
 .client-des i {
@@ -696,7 +704,8 @@ hr {
 
   .intro {
     display: block;
-    /* justify-content: space-between; */
+    /* gap:  */
+    justify-content: space-between;
   }
 
   .intro h2 {
@@ -710,7 +719,7 @@ hr {
     font-size: 16px;
     color: var(--dimgray500);
     font-weight: var(--font-w-reg);
-    width: 100%;
+    width: 41%;
   }
 
   .client-rev {
